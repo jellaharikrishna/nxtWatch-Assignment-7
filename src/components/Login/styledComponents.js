@@ -91,5 +91,9 @@ export const ErrorMsg = styled.p`
   font-family: Roboto;
   margin: 0;
 `
-
-// export const ErrorMsg = styled.p``
+export const UserLoginDetails = styled.p`
+  font-family: Roboto;
+  font-size: 10px;
+  margin-bottom: 0;
+  color: #464746;
+`

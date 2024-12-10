@@ -16,6 +16,7 @@ import {
   ShowPasswordLabel,
   LoginButton,
   ErrorMsg,
+  UserLoginDetails,
 } from './styledComponents'
 
 class Login extends Component {
@@ -79,7 +80,6 @@ class Login extends Component {
       showErrorMsg,
       errorMsg,
     } = this.state
-
     const jwtToken = Cookies.get('jwt_token')
 
     if (jwtToken !== undefined) {
@@ -145,6 +145,9 @@ class Login extends Component {
                   Login
                 </LoginButton>
                 {showErrorMsg && <ErrorMsg theme={theme}>*{errorMsg}</ErrorMsg>}
+                <UserLoginDetails>
+                  *User Credentials: username: rahul, password: rahul@2021
+                </UserLoginDetails>
               </LoginForm>
             </LoginBgContainer>
           )
